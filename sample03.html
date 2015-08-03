@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<body id="ttt">
+    <input type="button" id="btnTest" value="Click Me" />
+<script src="../../jquery.min.js"></script>
+<script>
+    $("#btnTest").click(function () {
+
+    });
+    // Standard.
+    $("#ttt").ready(function () {
+
+    });
+    $(document).ready(function () {
+
+    });
+        //OR
+    jQuery(document).ready(function () {
+         
+        alert('DOM is ready!');
+    });
+        //OR
+    $(function () {
+
+    });
+	// Shortcut, but same thing as above.
+	jQuery(function () { alert('No really, the DOM is ready!'); });
+	// Shortcut with fail-safe usage of $. Keep in mind that a reference
+	// to the jQuery function is passed into the anonymous function.
+	jQuery(function ($) {
+		alert('Seriously its ready!');
+		// Use $() without fear of conflicts.
+	});
+</script>
+</body>
+</html>

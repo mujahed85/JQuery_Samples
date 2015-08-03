@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+   
+    <p><strong>first</strong></p>
+    <p>middle</p>
+    <p><strong>last</strong></p>
+    <script src="./Contents/jquery.min.js"></script>
+    <script>
+        (function ($) { // Alerts middle, by filtering out the first
+            // and last <p> elements in the wrapper set.
+            alert($('p').filter(':not(:first):not(:last)').text());
+        })(jQuery); </script>
+</body>
+</html>

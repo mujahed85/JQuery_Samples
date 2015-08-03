@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <script src="./Contents/jquery.min.js"></script>
+    <script>
+        jQuery(function ($) { // Pass jQuery a function.
+            // Pass jQuery a string of HTML.
+            $('<p></p>').appendTo('body');
+            // Pass jQuery an element reference.
+            $(document.createElement('a')).text('jQuery').appendTo('p');
+            // Pass jQuery a CSS expression.        <p><a>jQuery</a></p>
+            $('a:first').attr('href', 'http://www.jquery.com');    // <p><a href="http://www.jquery.com">jQuery</a></p>
+            // Pass jQuery a DOM reference.
+            $(document.anchors[0]).attr('jQuery');
+        });
+    </script>
+</body>
+</html>
+ 

@@ -1,0 +1,11 @@
+var count=$("#container").find("*").length;
+var count=$("#container").find("p").length;
+$("p:first").text("Welcome");
+$("p:last").text("Welcome");
+$(':button/submit').click(function(){
+	All Button Click Event whose type is button not submit
+	$(this).attr('value','Please Wait....');
+});
+
+$('input[type="email"]').attr('value','mujahed.mca@gmail.com');
+$('a[href="www.google.com"]')

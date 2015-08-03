@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script src="./Contents/jquery.min.js"></script>
+<script>
+	// Standard.
+	jQuery(document).ready(function () { alert('DOM is ready!'); });
+	// Shortcut, but same thing as above.
+	jQuery(function () { alert('No really, the DOM is ready!'); });
+	// Shortcut with fail-safe usage of $. Keep in mind that a reference
+	// to the jQuery function is passed into the anonymous function.
+	jQuery(function ($) {
+		alert('Seriously its ready!');
+		// Use $() without fear of conflicts.
+	});
+	// Pass window to the jQuery function and attach
+	// event handler using the load() method shortcut.
+	jQuery(window).load(
+        function () {
+            alert('The page and all its assets are loaded!');
+        });
+</script>
+</body>
+</html>
